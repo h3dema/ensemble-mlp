@@ -5,7 +5,7 @@ This repository contains a collection of Python scripts that implement various e
 
 ## Overview
 
-Based on the provided code snippets, here's a summary of what each file appears to do:
+Here is a summary of what each python file does:
 
 
 * `adaboost-mlp.py`: This script implements a simplified version of the AdaBoost algorithm using multi-layer perceptrons (MLPs) as the weak learners. It trains multiple MLPs with different weights and combines their predictions to make the final prediction.
