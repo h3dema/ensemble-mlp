@@ -22,7 +22,6 @@ It decides to select a subset of models from a larger set, given certain constra
     - $W[m, k] = w_{m,k}$ for $m \in M, k \in K$
     - $w_{m,k} \in \mathbb{R}^{+}$: Contribution weight of model $m$ for class $k$, for $m \in M, k \in L$.
 - $M_e$: Total memory available
-- $R \subseteq L$: Ordered set of prioritized classes
 
 
 ### Decision Variables:
@@ -36,7 +35,7 @@ It decides to select a subset of models from a larger set, given certain constra
 
 ### Objective Function:
 
-Maximize the weighted contribution of selected models, prioritizing classes in R:
+Maximize the weighted contribution of selected models, prioritizing classes in $K$:
 
 
 $$
