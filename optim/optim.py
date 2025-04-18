@@ -90,6 +90,11 @@ def solve_model_selection_milp(S, P, W, Me, max_seconds=600, verbose=False):
             print(f"Selected models: {selected_models}")
             print(f"Prioritized classes: {prioritized_classes}")
 
+            # print("Selected models:", [int(x[m].x) for m in range(M)])
+            print("Class allocation:")
+            for c in range(K):
+                print(f"{c:2d}: ", " ".join([str(int(y[m][c].x)) for m in range(M)]))
+
         return selected_models, prioritized_classes
     else:
         print(f"Problem is {model.status}")
